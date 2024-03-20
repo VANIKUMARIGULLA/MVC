@@ -42,7 +42,7 @@ public class Registration extends HttpServlet {
 		String status = sd.create(s);
 		
 		if(status.equals("SUCCESS")) {
-			RequestDispatcher rd = request.getRequestDispatcher("/home.html");
+			RequestDispatcher rd = request.getRequestDispatcher("/success.html");
 			rd.include(request, response);
 		}
 		else {
